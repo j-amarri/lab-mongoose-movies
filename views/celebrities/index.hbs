@@ -1,4 +1,12 @@
 {{#each data}}
   <h2>{{ name }}</h2>
   <a href="/celebrities/{{ id }}">Check me out</a>
+  <form action="/celebrities/{{ id }}/delete" method="POST">
+      <button>Delete this celebrity</button>
+  </form>
+  <form action="/celebrities/{{ id }}/edit" method="GET">
+      <button>Edit this celebrity</button>
+  </form>
 {{/each}}
+<a href="/celebrities/create">Add your own celebrity</a>
+
