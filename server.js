@@ -32,5 +32,8 @@ mongoose
     });
   })
   .catch(error => {
-    console.error(`There was an error connecting the database to URI "${URI}"`, error);
+    console.error(
+      `There was an error connecting the database to URI "${URI}"`,
+      error
+    );
   });
